@@ -4,13 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "cp index.source.html index.html",
     "dev": "tsx server.ts",
-    "build": "vite build && rm -rf docs && cp -r dist docs",
+    "prebuild": "cp index.source.html index.html",
+    "build": "vite build && cp dist/index.html ./index.html && cp dist/404.html ./404.html && cp dist/.nojekyll ./.nojekyll && rm -rf assets && cp -r dist/assets ./assets && rm -rf docs && cp -r dist docs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "tsx server.ts",
     "preview": "vite preview",
-    "clean": "rm -rf dist server.js",
+    "clean": "rm -rf dist docs assets server.js",
     "lint": "tsc --noEmit"
   },
   "dependencies": {

@@ -20,6 +20,13 @@ export default defineConfig(({ command }) => {
       assetsDir: 'assets',
       sourcemap: false,
       chunkSizeWarningLimit: 1500,
+      rollupOptions: {
+        output: {
+          entryFileNames: 'assets/index.js',
+          chunkFileNames: 'assets/[name].js',
+          assetFileNames: 'assets/[name].[ext]',
+        },
+      },
     },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
