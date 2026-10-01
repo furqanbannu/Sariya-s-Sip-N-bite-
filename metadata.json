@@ -1,0 +1,6 @@
+{
+  "name": "Sariya's Sip N Bite",
+  "description": "Ultra-premium luxury dining at Lucky Kabana Hotel on Mall Road, Murree. Savor Italian Chicken Steaks, Malai Boti Pizzas, signature pastas, and mountain hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
