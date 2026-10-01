@@ -1,4 +1,9 @@
 import { GalleryItem, MenuItem, Review } from '../types/restaurant';
+import heroImg from '../assets/images/hero_murree_dining_1790675109993.jpg';
+import steakImg from '../assets/images/signature_steak_dish_1790675129975.jpg';
+import pizzaImg from '../assets/images/signature_malai_pizza_1790675143064.jpg';
+import pastaImg from '../assets/images/signature_pasta_dish_1790675159546.jpg';
+import terraceImg from '../assets/images/murree_terrace_view_1790675172445.jpg';
 
 export const RESTAURANT_INFO = {
   name: "Sariya's Sip N Bite",
@@ -23,11 +28,11 @@ export const RESTAURANT_INFO = {
     roomService: 'Available 24/7 for Lucky Kabana Hotel Guests',
   },
   images: {
-    hero: '/src/assets/images/hero_murree_dining_1790675109993.jpg',
-    steak: '/src/assets/images/signature_steak_dish_1790675129975.jpg',
-    pizza: '/src/assets/images/signature_malai_pizza_1790675143064.jpg',
-    pasta: '/src/assets/images/signature_pasta_dish_1790675159546.jpg',
-    terrace: '/src/assets/images/murree_terrace_view_1790675172445.jpg',
+    hero: heroImg,
+    steak: steakImg,
+    pizza: pizzaImg,
+    pasta: pastaImg,
+    terrace: terraceImg,
   },
 };
 
@@ -40,7 +45,7 @@ export const SIGNATURE_DISHES: MenuItem[] = [
       'Grilled tender breast fillet basted in Mediterranean herbs, glazed with velvety mushroom tarragon cream, served with charred herb potatoes and grilled garden vegetables.',
     price: 950,
     isSignature: true,
-    image: '/src/assets/images/signature_steak_dish_1790675129975.jpg',
+    image: steakImg,
     prepTime: '22 mins',
     portion: 'Serves 1–2',
     pairing: 'Fresh Mint Margarita or Hot Alpine Tea',
@@ -55,7 +60,7 @@ export const SIGNATURE_DISHES: MenuItem[] = [
       'Hand-tossed crust fired to blistered perfection, topped with slow-marinated smoky chicken malai chunks, rich mozzarella, green jalapeños, and silky garlic crema.',
     price: 890,
     isSignature: true,
-    image: '/src/assets/images/signature_malai_pizza_1790675143064.jpg',
+    image: pizzaImg,
     prepTime: '20 mins',
     portion: 'Medium 10-inch · 6 Slices',
     pairing: 'Chilled Peach Iced Tea',
@@ -70,7 +75,7 @@ export const SIGNATURE_DISHES: MenuItem[] = [
       'Silky fettuccine ribbons tossed in a rich double-cream parmesan reduction, succulent grilled chicken strips, sauteed button mushrooms, and cracked black tellicherry peppercorns.',
     price: 780,
     isSignature: true,
-    image: '/src/assets/images/signature_pasta_dish_1790675159546.jpg',
+    image: pastaImg,
     prepTime: '18 mins',
     portion: 'Generous Single Bowl',
     pairing: 'Crispy Garlic Baguette',
@@ -521,35 +526,35 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-1',
     title: 'The Grand Alpine Dining Hall',
     category: 'interior',
-    image: '/src/assets/images/hero_murree_dining_1790675109993.jpg',
+    image: heroImg,
     caption: 'Warm ambient lighting, bespoke dark walnut tables, and panoramic vistas overlooking Mall Road.',
   },
   {
     id: 'gal-2',
     title: 'Italian Chicken Steak Presentation',
     category: 'dishes',
-    image: '/src/assets/images/signature_steak_dish_1790675129975.jpg',
+    image: steakImg,
     caption: 'Seared chicken fillet with rich herb mushroom glaze, rosemary roasted potatoes and grilled asparagus.',
   },
   {
     id: 'gal-3',
     title: 'Wood-Fired Malai Boti Pizza',
     category: 'dishes',
-    image: '/src/assets/images/signature_malai_pizza_1790675143064.jpg',
+    image: pizzaImg,
     caption: 'Tender marinated chicken tikka cubes, blistered sourdough crust, and silky crema.',
   },
   {
     id: 'gal-4',
     title: 'Artisanal Special Fettuccine Pasta',
     category: 'dishes',
-    image: '/src/assets/images/signature_pasta_dish_1790675159546.jpg',
+    image: pastaImg,
     caption: 'Double-cream parmesan reduction with tender poultry strips and tellicherry pepper.',
   },
   {
     id: 'gal-5',
     title: 'Mall Road Mountain Terrace Lounge',
     category: 'terrace',
-    image: '/src/assets/images/murree_terrace_view_1790675172445.jpg',
+    image: terraceImg,
     caption: 'Open-air pine terrace at Lucky Kabana Hotel with glowing lanterns and crisp mountain air.',
   },
 ];

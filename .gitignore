@@ -1,6 +1,6 @@
 node_modules/
 build/
-dist/
+# dist/ is tracked so GitHub Pages can serve compiled production assets
 coverage/
 .DS_Store
 *.log
